@@ -3,14 +3,18 @@
   "version": "2.0.0",
   "description": "",
   "main": "src/server.js",
+  "engines": {
+    "node": ">= 14"
+  },
   "scripts": {
-    "start": "node .",
+    "start": "node server.ts",
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
     "prod": "tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "eb deploy && eb setenv port=5432 username=postgres password=postgres database=project3 host=database-1.cftgaaaxbabw.us-east-1.rds.amazonaws.com"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",

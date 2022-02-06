@@ -3,9 +3,10 @@
   "scripts": {
     "install:frontend": "cd udagram-frontend && npm install",
     "build:frontend": "cd udagram-frontend && npm run build",
-    "install:backend": "cd udagram-api && npm install",
-    "build:backend": "cd udagram-api && npm run build"
-    ,"depoly:s3":"cd udagram-frontend && npm run depoly"
+    "install:server": "cd udagram-api && npm install",
+    "build:server": "cd udagram-api && npm run build",
+    "deploy:s3": "cd udagram-frontend && npm run deploy",
+    "deploy:server": "cd udagram-api && npm run deploy"
   },
   "devDependencies": {}
 }
