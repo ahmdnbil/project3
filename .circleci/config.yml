@@ -14,14 +14,14 @@ jobs:
       - aws-cli/setup
       - eb/setup
       - run:
-        name: install independencies for frontend
-        command: npm run install:frontend
+          name: install independencies for frontend
+          command: npm run install:frontend
       - run:
-        name: install independencies for server
-        command: npm run install:server
+          name: install independencies for server
+          command: npm run install:server
       - run:
-        name: build frontend folder
-        command: npm run build:frontend
+          name: build frontend folder
+          command: npm run build:frontend
       - run:
-        name: build backend folder
-        command: npm run build:server
+          name: build backend folder
+          command: npm run build:server
