@@ -6,7 +6,8 @@
     "install:server": "cd udagram-api && npm install",
     "build:server": "cd udagram-api && npm run build",
     "deploy:s3": "cd udagram-frontend && npm run deploy",
-    "deploy:server": "cd udagram-api && npm run deploy"
+    "deploy:server": "cd udagram-api && npm run deploy",
+    "setenv": "cd udagram-api && npm run setenv"
   },
   "devDependencies": {}
 }
