@@ -1,8 +1,7 @@
-
 {
   "scripts": {
     "install:frontend": "cd udagram-frontend && npm install",
-    "build:frontend": "cd udagram-frontend && npm run build",
+    "build:frontend": "cd udagram-frontend && npm run build:prod",
     "install:server": "cd udagram-api && npm install",
     "build:server": "cd udagram-api && npm run build",
     "deploy:s3": "cd udagram-frontend && npm run deploy",

@@ -9,13 +9,13 @@
   "scripts": {
     "start": "node server.ts",
     "tsc": "tsc",
-    "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "eb deploy udagram-api-dev",
-    "setenv": " eb setenv PORT=5432 POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_DB=project3 POSTGRES_HOST=database-1.cftgaaaxbabw.us-east-1.rds.amazonaws.com AWS_REGION=us-east-1 AWS_PROFILE=eb-cli"
+    "setenv": " eb setenv PORT=3000 POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_DB=project3 POSTGRES_HOST=database-1.cftgaaaxbabw.us-east-1.rds.amazonaws.com AWS_REGION=us-east-1 AWS_PROFILE=null DB_PORT=5432 AWS_SECRET_ACCESS_KEY=ASIAYSVOOE5KE2A4TUPL AWS_SECRET_ACCESS_KEY=fIsGxxs4Anr+fJZZJjFWId3avFLVxWJ8+Kljlfu/ JWT_SECRET=hello-from-other-side"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
