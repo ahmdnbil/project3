@@ -1,65 +1,29 @@
-# Udagram
+## Udagram
+ - this program is used to create users and make posts containing images and some plain text
+ - first of all i have tested the application on my local machine by the follwoing steps:
+     - Creating database by the following command `create database udagram` in psql terminal
+     - And adding the variables in .env file and testing it
+     - after making that we install the dependencies of front-end and server
+     - building fronend and serve
+     - initating the server and front end and testing them
+     - once they work propely we now could deploy the project
+ - second: we deploy our project to the internet by aws servies by the following steps:
+     - makin application ec2 by the following steps:
+       - `eb init` to create the application 
+       - `eb create` to make the environment
+       - `eb use <name of environment>` for making the application uses the environment
+       - `eb deploy <environmnet name>` for any update to our application
+       - ```note``` we edit config of folder elasticbeanstalk by adding this section:
+           - ```deploy:
+                artifact: <root of folder>```
+     - making the rds throw the console by the configuration we want and copying the host of it
+     - make the `S3` bucket for static files like JS, HTML and CSS by the following steps:
+        - `aws s3 mb s3://<name of bucket> --region <region>`
+        - `aws s3 cp --recursive public-read s3://<name of bucket>` 
+     - finally we make sure the we have passed the environment variables to EB 
 
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+### Port
+- Database: `5432`
 
-## Getting Started
-
-1. Clone this repo locally into the location of your choice.
-1. Move the content of the udagram folder at the root of the repository as this will become the main content of the project.
-1. Open a terminal and navigate to the root of the repo
-1. follow the instructions in the installation step
-
-The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
-
-### Dependencies
-
-```
-- Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
-
-- npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
-
-- AWS CLI v2, v1 can work but was not tested for this project
-
-- A RDS database running Postgres.
-
-- A S3 bucket for hosting uploaded pictures.
-
-```
-
-### Installation
-
-Provision the necessary AWS services needed for running the application:
-
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
-
-## Testing
-
-This project contains two different test suite: unit tests and End-To-End tests(e2e). Follow these steps to run the tests.
-
-1. `cd starter/udagram-frontend`
-1. `npm run test`
-1. `npm run e2e`
-
-There are no Unit test on the back-end
-
-### Unit Tests:
-
-Unit tests are using the Jasmine Framework.
-
-### End to End Tests:
-
-The e2e tests are using Protractor and Jasmine.
-
-## Built With
-
-- [Angular](https://angular.io/) - Single Page Application Framework
-- [Node](https://nodejs.org) - Javascript Runtime
-- [Express](https://expressjs.com/) - Javascript API Framework
-
-## License
-
-[License](LICENSE.txt)
+### Website
+- link: http://my-589850093396-bucket.s3-website-us-east-1.amazonaws.com/home
