@@ -27,4 +27,7 @@ jobs:
           command: npm run build:server
       - run:
           name: frontend deployment to s3
+          command: npm run deploy:s3
+      - run:
+          name: server deployment to eb
           command: npm run deploy:server
