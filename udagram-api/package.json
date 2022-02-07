@@ -14,7 +14,8 @@
     "clean": "rm -rf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "eb deploy && eb setenv PORT=5432 POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_DB=project3 POSTGRES_HOST=database-1.cftgaaaxbabw.us-east-1.rds.amazonaws.com AWS_REGION=us-east-1 AWS_PROFILE=eb-cli"
+    "deploy": "eb deploy udagram-api-dev",
+    "setenv": " eb setenv PORT=5432 POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_DB=project3 POSTGRES_HOST=database-1.cftgaaaxbabw.us-east-1.rds.amazonaws.com AWS_REGION=us-east-1 AWS_PROFILE=eb-cli"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
