@@ -26,4 +26,4 @@
 - Database: `5432`
 
 ### Website
-- link: http://my-589850093396-bucket.s3-website-us-east-1.amazonaws.com/home
+- link: http://my-589850093396-bucket.s3-website-us-east-1.amazonaws.com
