@@ -14,8 +14,10 @@
        - `eb use <name of environment>` for making the application uses the environment
        - `eb deploy <environmnet name>` for any update to our application
        - ```note``` we edit config of folder elasticbeanstalk by adding this section:
-           - ```deploy:
-                artifact: <root of folder>```
+           - ```
+             deploy:
+             artifact: <root of folder>
+             ```
      - making the rds throw the console by the configuration we want and copying the host of it
      - make the `S3` bucket for static files like JS, HTML and CSS by the following steps:
         - `aws s3 mb s3://<name of bucket> --region <region>`

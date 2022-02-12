@@ -35,3 +35,11 @@ jobs:
       - run:
           name: set environment variables to EB
           command: npm run setenv
+workflows:
+    main:
+      jobs:
+        - build:
+            filters:
+              branches:
+                only:
+                  - master
