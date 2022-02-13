@@ -15,8 +15,8 @@ jobs:
       - node/install
       - aws-cli/setup
       - eb/setup
-      - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
+      - browser/install-chrome
+      - browser/install-chromedriver
       - run:
           name: install independencies for frontend
           command: npm run install:frontend
