@@ -43,8 +43,8 @@
 ![DB](./screenshots/Database_status.png)
 
 - ***screenshots for circleci***
-    1. ![Circleci1](./screenshots/CircleCi/circleCi1.png)
-    2. ![Circleci2](./screenshots/CircleCi/circleCi2.png)
+    1. ![Circleci_1](./screenshots/CircleCi/CircleCi1.png)
+    2. ![Circleci_2](./screenshots/CircleCi/CircleCi2.png)
     3. ![Circleci_Variable](./screenshots/CircleCi/variable_env_for_circleci.png)
 
 - ***screenshot for website***
