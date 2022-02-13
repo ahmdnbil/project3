@@ -3,6 +3,7 @@ orbs:
   aws-cli: circleci/aws-cli@2.0.6
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-s3: circleci/aws-s3@1.0.0
+  browser: circleci/browser-tools@1.2.4
 version: 2.1
 
 jobs:
