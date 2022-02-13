@@ -1,8 +1,8 @@
 # pipline
 
 - ***___circleci success___***
-![pic1](../screenshots/CircleCi/circleCi1.png)
-![pic2](../screenshots/CircleCi/circleCi2.png)
+![pic1](../screenshots/CircleCi/CircleCi1.png)
+![pic2](../screenshots/CircleCi/CircleCi2.png)
 
 - ***___circleci variables___***
 ![pic3](../screenshots/CircleCi/variable_env_for_circleci.png)
