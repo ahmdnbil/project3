@@ -8,6 +8,7 @@
 8- installing independencies for frontend
 9- building front-end folder
 10- building back-end folder
-11- deploying application to elastic beanstalk
-12- deploying static files to s3
-13- set environment variables to elastic beanstalk for connection with database
+11- testing application
+12- deploying application to elastic beanstalk
+13- deploying static files to s3
+14- set environment variables to elastic beanstalk for connection with database
