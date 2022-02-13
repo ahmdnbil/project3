@@ -29,3 +29,19 @@
 
 ### Website
 - link: http://my-589850093396-bucket.s3-website-us-east-1.amazonaws.com
+
+
+### screenshots
+- ***screenshots for S3***
+![S3_status](./screenshots/S3/S3_status.png)
+![S3_URL](./screenshots/S3/S3.png)
+
+- ***screenshots for EB***
+![EBS_Status](./screenshots/EB_status.png)
+
+- ***__screenshots for database__***
+![DB](./screenshots/Database_status.png)
+
+- ***screenshots for circleci***
+![Circleci1](./screenshots/CircleCi/CircleCi1.png)
+![Circleci_Variable](./screenshots/CircleCi/variable_env_for_circleci.png)
