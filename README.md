@@ -43,9 +43,9 @@
 ![DB](./screenshots/Database_status.png)
 
 - ***screenshots for circleci***
-![Circleci1](./screenshots/CircleCi/circleCi1.png)
-![Circleci2](./screenshots/CircleCi/circleCi2.png)
-![Circleci_Variable](./screenshots/CircleCi/variable_env_for_circleci.png)
+    1. ![Circleci1](./screenshots/CircleCi/circleCi1.png)
+    2. ![Circleci2](./screenshots/CircleCi/circleCi2.png)
+    3. ![Circleci_Variable](./screenshots/CircleCi/variable_env_for_circleci.png)
 
 - ***screenshot for website***
 ![udagram_website](./screenshots/website.png)
