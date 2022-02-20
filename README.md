@@ -29,7 +29,7 @@
 
 ### Website
 - link: http://my-589850093396-bucket.s3-website-us-east-1.amazonaws.com
-
+     - `this link is currently not working because I have terminated the resources :(`
 
 ### screenshots
 - ***screenshots for S3***
